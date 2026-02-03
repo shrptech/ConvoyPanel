@@ -38,6 +38,23 @@ const UserDropdown = ({ logout }: Props) => {
                             <Menu.Divider />
                         </>
                     )}
+                    <Menu.Item
+                        component='a'
+                        href='https://billing.shrp.no'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        Billing panel
+                    </Menu.Item>
+                    <Menu.Item
+                        component='a'
+                        href='https://shrp.no'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                    >
+                        Homepage
+                    </Menu.Item>
+                    <Menu.Divider />
                     <Menu.Item color='red' onClick={logout}>
                         {tAuth('sign_out')}
                     </Menu.Item>

@@ -120,9 +120,9 @@ const NavigationBar = () => {
                             to={isAdminArea ? '/admin' : '/'}
                             className='flex items-center space-x-3'
                         >
-                            <Logo className='w-6 h-6 text-foreground' />
+                            <Logo className='w-6 h-6' />
                             <h1 className='font-semibold text-lg text-foreground'>
-                                Convoy
+                                shrp
                             </h1>
                         </Link>
                         {breadcrumb && (
@@ -164,7 +164,7 @@ const NavigationBar = () => {
                             transition: 'width 0.25s ease',
                         }}
                     >
-                        <Logo className='w-5 h-5 text-foreground' />
+                        <Logo className='w-5 h-5' />
                     </div>
                     <div className='flex z-[2000] overflow-x-auto scrollbar-hide'>
                         {routes.map(route => (
